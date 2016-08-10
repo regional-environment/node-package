@@ -1,0 +1,30 @@
+{
+  "name": "regional-environment",
+  "version": "0.0.0",
+  "description": "List all config files/directories ",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash -c ./test.sh"
+  },
+  "devDependencies": {
+    "standard": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regional-environment/node-package.git"
+  },
+  "keywords": [
+    "regional-environment",
+    "regional",
+    "project-config",
+    "project-advanced-config",
+    "editor-advanced-config"
+  ],
+  "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/regional-environment/node-package/issues"
+  },
+  "homepage": "https://github.com/regional-environment/node-package#readme"
+}
