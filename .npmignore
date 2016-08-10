@@ -1,0 +1,10 @@
+
+*.log
+quick-test
+test
+tmp
+temp
+*.tmp
+*.temp
+node_modules
+.git*
