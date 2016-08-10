@@ -1,1 +1,1 @@
-standard index.js
+standard
