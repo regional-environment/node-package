@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "bash -c ./test.sh",
-    "fix": "bash -c ./fix.sh"
+    "fix": "bash -c ./fix.sh",
+    "clean": "bash -c ./clean.sh"
   },
   "devDependencies": {
     "standard": "*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "x-iterable-base": "^2.0.0"
+  },
   "standard": {
     "env": {
       "node": true,
