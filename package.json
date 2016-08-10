@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/regional-environment/node-package/issues"
   },
-  "homepage": "https://github.com/regional-environment/node-package#readme"
+  "homepage": "https://github.com/regional-environment/node-package#readme",
+  "engines": {
+      "node": ">= 6.0.0"
+  }
 }
