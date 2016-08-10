@@ -10,6 +10,11 @@
     "standard": "*"
   },
   "dependencies": {},
+  "standard": {
+    "env": {
+      "node": true
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/regional-environment/node-package.git"
