@@ -5,4 +5,29 @@
 ![downloads](https://img.shields.io/npm/dt/regional-environment.svg)
 ![version](https://img.shields.io/npm/v/regional-environment.svg)
 [![license](https://img.shields.io/npm/l/regional-environment.svg)](http://spdx.org/licenses/MIT)
-![node](https://img.shields.io/node/v/regional-environment.svg)
+
+## Requirements
+
+ * ECMAScript 6
+
+## Usage
+
+```javascript
+
+// import the module
+const regionalenv = require('regional-environment')
+
+// get all items
+const allitems = regionalenv.getAllItems(dirname)
+
+// get some items whose name must contain only '.mypackagename' and may contain '.myeditor' and/or '.myplatform'
+const myitems = regionalenv.getItemsByClasses(dirname, {
+  required: ['mypackagename'],
+  optional: ['myeditor', 'myplatform']
+})
+
+```
+
+## License
+
+MIT
