@@ -4,7 +4,8 @@
   "description": "List all config files/directories ",
   "main": "index.js",
   "scripts": {
-    "test": "bash -c ./test.sh"
+    "test": "bash -c ./test.sh",
+    "fix": "bash -c ./fix.sh"
   },
   "devDependencies": {
     "standard": "*"
