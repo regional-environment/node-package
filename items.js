@@ -4,7 +4,7 @@ const {readdirSync} = require('fs')
 const {join} = require('path')
 const {XIterable} = require('x-iterable-base')
 const {iterator} = Symbol
-const regex = /(^|(^\..*))\.regional-environment($|(\.[^\.]*$))/
+const regex = /(^|(^\..*))\.regional-environment$/
 
 function ItemList (dirname, suffix) {
   const list = readdirSync(dirname).filter(container => regex.test(container))
