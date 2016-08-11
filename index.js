@@ -12,15 +12,18 @@ function getItems (dirname, {
 } = {}) {
   const adddelimiter = array =>
     array.map(classname => delimiter + classname)
-  const strcontains = str =>
-    substr => str.indexOf(substr) !== -1
   classes = adddelimiter(classes)
   except = adddelimiter(except)
-  return new ItemList(dirname)
-    .filter(item => hasPrefix(item, prefix))
-    .filter(item => hasSuffix(item, suffix))
-    .filter(item => classes.every(strcontains(item)))
-    .filter(item => !except.some(strcontains(item)))
+  return new ItemList(dirname).filter(
+    ({name}) => {
+      if (hasPrefix(name, prefix) && hasSuffix(name, suffix)) {
+        const contains = classname =>
+          name.indexOf(classname) !== -1
+        return classes.every(contains) && !except.some(contains)
+      }
+      return false
+    }
+  )
 }
 
 module.exports = {
