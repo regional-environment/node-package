@@ -1,6 +1,6 @@
 {
   "name": "regional-environment",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "List all config files/directories ",
   "main": "index.js",
   "scripts": {
