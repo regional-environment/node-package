@@ -1,1 +1,4 @@
-standard && node -p "require('.')"
+standard && {
+	echo Result of \`require\(\'$(pwd)\'\)\`
+	node -p "require('.')"
+}
