@@ -1,1 +1,1 @@
-standard
+standard && node -p "require('.')"
