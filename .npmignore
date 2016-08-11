@@ -8,3 +8,5 @@ temp
 *.temp
 *.sh
 .git*
+.travis.yml
+appveyor.yml
