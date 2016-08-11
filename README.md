@@ -20,7 +20,7 @@ const regionalenv = require('regional-environment')
 // get all items
 const allitems = regionalenv.getAllItems(dirname)
 
-// get some items whose name must contain '.myfiletype', '.atom' and '.x86'
+// get some items whose name contains '.myfiletype', '.atom' and '.x86'
 const myitems = regionalenv.getItems(dirname, {
   classes: ['myfiletype', 'atom', 'x86'],
   suffix: 'myext'
