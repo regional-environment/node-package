@@ -20,10 +20,10 @@ const regionalenv = require('regional-environment')
 // get all items
 const allitems = regionalenv.getAllItems(dirname)
 
-// get some items whose name must contain only '.mypackagename' and may contain '.myeditor' and/or '.myplatform'
-const myitems = regionalenv.getItemsByClasses(dirname, {
-  required: ['mypackagename'],
-  optional: ['myeditor', 'myplatform']
+// get some items whose name must contains '.myfiletype', '.atom' and '.x86'
+const myitems = regionalenv.getItems(dirname, {
+  classes: ['myfiletype', 'atom', 'x86'],
+  suffix: 'myext'
 })
 
 ```
