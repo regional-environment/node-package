@@ -9,7 +9,7 @@
 
 ## What is this?
 
-This is a JavaScript library that helps building [regional-environment](https://github.com/regional-environment) plugins for code editors
+This is a JavaScript library that helps building [regional-environment](https://github.com/regional-environment/about) plugins for code editors
 
 ## Requirements
 
