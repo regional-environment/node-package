@@ -17,7 +17,10 @@ function getItems (dirname, {
           .slice(prefix.length, -suffix.length || name.length)
           .split(delimiter)
         return (
-          required.every(classname => classes.indexOf(classname) !== -1) &&
+          required.every(
+            classname =>
+              classes.indexOf(classname) !== -1
+          ) &&
           !classes.some(
             classname =>
               required.indexOf(classname) === -1 && optional.indexOf(classname) === -1
