@@ -7,19 +7,22 @@ const hasSuffix = require('./suffix.js')
 const getAllItems = dirname => new ItemList(dirname)
 
 function getItems (dirname, {
-  classes = [], except = [], delimiter = '.',
+  required = [], optional = [], delimiter = '.',
   prefix = '', suffix = ''
 } = {}) {
-  const adddelimiter = array =>
-    array.map(classname => delimiter + classname)
-  classes = adddelimiter(classes)
-  except = adddelimiter(except)
   return new ItemList(dirname).filter(
     ({name}) => {
       if (hasPrefix(name, prefix) && hasSuffix(name, suffix)) {
-        const contains = classname =>
-          name.indexOf(classname) !== -1
-        return classes.every(contains) && !except.some(contains)
+        const classes = name
+          .slice(prefix.length, -suffix.length || name.length)
+          .split(delimiter)
+        return (
+          required.every(classname => classes.indexOf(classname) !== -1) &&
+          !classes.some(
+            classname =>
+              required.indexOf(classname) === -1 && optional.indexOf(classname) === -1
+          )
+        )
       }
       return false
     }
