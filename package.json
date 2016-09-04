@@ -12,7 +12,7 @@
     "standard": "*"
   },
   "dependencies": {
-    "x-iterable-base": "^2.0.0"
+    "x-iterable-base": "^2.1.0"
   },
   "standard": {
     "env": {
